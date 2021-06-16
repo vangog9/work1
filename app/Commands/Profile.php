@@ -31,15 +31,13 @@ class Profile extends Command
         $username = $this->ask('username');
         $mail = $this->ask('mail');
 
-        $this->info($username.'   '.$mail);
-
-
+        $this->info($username . '   ' . $mail);
     }
 
     /**
      * Define the command's schedule.
      *
-     * @param  \Illuminate\Console\Scheduling\Schedule $schedule
+     * @param \Illuminate\Console\Scheduling\Schedule $schedule
      * @return void
      */
     public function schedule(Schedule $schedule): void
